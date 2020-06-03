@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "PlanetSearch";
+}
+
+@model Planet
+
+@if (Model != null)
+{
+    <h1>@Model.name</h1>
+}
+else
+{
+    <h1>PlanetSearch</h1>
+}
+
+<form method="post" action="PlanetSearch">
+    <input name="Id" type="number" />
+    <input type="submit" />
+</form>
+
+
